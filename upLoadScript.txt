@@ -1,0 +1,12 @@
+option batch on
+option confirm off
+open scp://root:12345678@192.168.*.*
+put soft\tt.txt /data/projects/
+close
+open scp://root:12345678@192.168.*.*
+put soft\tt.txt /data/projects/
+close
+open scp://root:12345678@192.168.*.*
+put soft\tt.txt /data/projects/
+close
+exit

@@ -1,0 +1,10 @@
+export JAVA_HOME=/opt/jdk1.8.0_45
+export PATH=$JAVA_HOME/bin:$PATH
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+cd /data/projects/redis-client
+./start.sh stop
+./start.sh start
+ps -ef|grep redis-client|grep -v grep
+sleep 1m
+
+
